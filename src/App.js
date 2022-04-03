@@ -6,12 +6,11 @@ import Dashboard from './Components/Dashboard/Dashboard';
 import Home from './Components/Home/Home';
 import Navbar from './Components/Navbar/Navbar';
 import Reviews from './Components/Reviews/Reviews';
-import bootstrap from 'bootstrap';
-import { Container } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="App ">
+    <div className="App Container">
       <Navbar></Navbar>
       <Routes>
          <Route path='/' element={<Home></Home>}></Route>

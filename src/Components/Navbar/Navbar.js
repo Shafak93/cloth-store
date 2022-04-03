@@ -1,15 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './Navbar.css'
-import bootstrap from 'bootstrap';
 import { Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+
+import './Navbar.css'
 
 
 const Navbar = () => {
     return (
-        <div >
-            <nav className='nav-items'>
-                <Link className='item' to='/'>Home</Link>
+        <div className='container d-flex justify-content-center ' >
+ 
+            <nav className='nav-items p-4'>
+                <Link className='item m-3' to='/'>Home</Link>
                 <Link className='item' to='reviews'>Reviews</Link>
                 <Link className='item' to='dashboard'>Dashboard</Link>
                 <Link className='item' to='blogs'>Blogs</Link>
