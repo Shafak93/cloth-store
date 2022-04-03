@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Reviews = () => {
+    const [reviews, setReviews] = useState([])
+    
+    useEffect(()=>{
+        fetch('fakeData.json')
+        .then(response => response.json())
+        .then(data => setReviews(data))
+    },[])
     return (
         <div>
-            <h1>This is reviews</h1>
+            
         </div>
     );
 };
