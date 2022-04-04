@@ -1,4 +1,6 @@
+import { Button } from 'bootstrap';
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import tshirt from '../../assets/images/tshirt.png'
 import CustomerReview from '../CustomerReview/CustomerReview';
 
@@ -14,7 +16,7 @@ const Home = () => {
     
     return (
         <main className='container'>
-            <div className=' d-flex justify-content-center'>
+            <div className=' d-flex justify-content-space-between row'>
             <div className="col-md-8">
                 <h1>Your Desire</h1>
                 <h1>Our Destination</h1>
@@ -30,7 +32,9 @@ const Home = () => {
             {
                 reviews.map((review) => <CustomerReview key ={review.id} review = {review}></CustomerReview>)
             }
+
         </div>
+        <Link to='reviews' >Customer Reviews</Link>
         </main>
     );
 };

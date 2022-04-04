@@ -7,6 +7,7 @@ import Home from './Components/Home/Home';
 import Navbar from './Components/Navbar/Navbar';
 import Reviews from './Components/Reviews/Reviews';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import NotFound from './Components/NotFound/NotFound';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
          <Route path='/dashboard' element={<Dashboard></Dashboard>}></Route>
          <Route path='/blogs' element={<Blogs></Blogs>}></Route>
          <Route path='/about' element={<About></About>}></Route>
+         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       
     </div>
