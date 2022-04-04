@@ -1,4 +1,8 @@
-
+.text-color{
+    color: orange;
+    font-size: 60px;
+    font-weight: 700;
+}
 .btn-review{
     text-decoration: none;
     background-color: blue;

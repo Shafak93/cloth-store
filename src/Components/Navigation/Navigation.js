@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import CustomLink from '../CustomLink/CustomLink';
 import './Navigation.css'
 
 const Navigation = () => {
@@ -13,11 +14,11 @@ const Navigation = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link> <Link className='item' to='/'>Home</Link></Nav.Link>
-                        <Nav.Link ><Link className='item' to='reviews'>Reviews</Link></Nav.Link>
-                        <Nav.Link > <Link className='item' to='dashboard'>Dashboard</Link></Nav.Link>
-                        <Nav.Link > <Link className='item' to='blogs'>Blogs</Link></Nav.Link>
-                        <Nav.Link ><Link className='item' to='about'>About</Link></Nav.Link>
+                        <Nav.Link> <CustomLink className='item' to='/'>Home</CustomLink> </Nav.Link>
+                        <Nav.Link ><CustomLink className='item' to='reviews'>Reviews</CustomLink></Nav.Link>
+                        <Nav.Link > <CustomLink className='item' to='dashboard'>Dashboard</CustomLink></Nav.Link>
+                        <Nav.Link > <CustomLink className='item' to='blogs'>Blogs</CustomLink></Nav.Link>
+                        <Nav.Link ><CustomLink className='item' to='about'>About</CustomLink></Nav.Link>
                     </Nav>
                     </Navbar.Collapse>
                 </Container>
