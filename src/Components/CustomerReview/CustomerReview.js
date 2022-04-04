@@ -7,9 +7,9 @@ const CustomerReview = (props) => {
     return (
             <div className=' review d-flex flex-column align-items-center w-25'>
            <div className='review-body'>
-            <h4>{name}</h4>
-            <p>{reviewText}</p>
-            <p>Rating:{rating}</p>
+                <h4>{name}</h4>
+                <p>{reviewText}</p>
+                <p>Rating:{rating}</p>
            </div>
         </div>
         

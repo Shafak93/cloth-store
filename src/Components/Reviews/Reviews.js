@@ -6,7 +6,7 @@ import CustomerReview from '../CustomerReview/CustomerReview';
 const Reviews = () => {
     const [reviews, setReviews] = useReviews()
     return (
-        <div className='row mx-4'>
+        <div className=' container d-flex justify-content-around flex-wrap'>
             {
                 reviews.map(review => <AllReviews key={review.id} review = {review}></AllReviews>)
             }
