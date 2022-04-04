@@ -1,3 +1,12 @@
+# Project Name: Cloth-Store
+## Live Site Link:  https://cloth-store-cfea70.netlify.app/
+
+### About Projec
+* This is customer review project.In Home page there has product display and three customer review which is dynamically shown.
+* In home page , if clicked on customer review button than it will go to review page. And there has all customer review.
+* In Dashboard i use rechart graph.
+* In this project I use react, html, css, bootstrap, rechart, react-route, custom hooks and json data.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
