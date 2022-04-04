@@ -43,8 +43,8 @@ const Chart = () => {
     ]
     return (
         <div>
-            <ResponsiveContainer  width={700} height={250}>
-            <BarChart data={data}>
+           
+            <BarChart width={700} height={250} data={data}>
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="month" />
                 <YAxis />
@@ -53,10 +53,10 @@ const Chart = () => {
                 <Bar dataKey="revenue" fill="#8884d8" />
                 <Bar dataKey="investment" fill="#82ca9d" />
             </BarChart>
-            </ResponsiveContainer>
+           
     
-            <ResponsiveContainer width={700} height={250}>
-            <LineChart className='mt-4'  data={data}
+           
+            <LineChart width={700} height={250}  data={data}
                 margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="month" />
@@ -66,7 +66,7 @@ const Chart = () => {
                 <Line type="monotone" dataKey="revenue" stroke="#8884d8" />
                 <Line type="monotone" dataKey="investment" stroke="#82ca9d" />
             </LineChart>
-            </ResponsiveContainer>
+           
 
 
         </div>

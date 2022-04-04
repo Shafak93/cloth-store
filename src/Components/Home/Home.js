@@ -4,15 +4,15 @@ import { Link } from 'react-router-dom';
 import tshirt from '../../assets/images/tshirt.png'
 import useReviews from '../../hooks/useReviews';
 import CustomerReview from '../CustomerReview/CustomerReview';
+import './Home.css'
 
 const Home = () => {
     const [reviews, setReviews] = useReviews()
     const customerReview = reviews.slice(0,3)
-    // console.log(customerReview)
 
     return (
         <main className='container'>
-            <div className=' d-flex justify-content-space-between row'>
+            <div className='row'>
             <div className="col-md-8">
                 <h1>Your Desire</h1>
                 <h1>Our Destination</h1>
@@ -24,13 +24,17 @@ const Home = () => {
             </div>
             
         </div>
-        <div className='mt-4 row'>
-            {
-                customerReview.map((review) => <CustomerReview key ={review.id} review = {review}></CustomerReview>)
-            }
+        <div className='d-flex flex-column  align-items-center'>
+            <div className='customer-review mt-4 row justify-content-around'>
+                {
+                    customerReview.map((review) => <CustomerReview key ={review.id} review = {review}></CustomerReview>)
+                }
 
+            </div>
+            <div className='py-4'>
+            <Link to='reviews' className='btn-review' >Customer Reviews</Link>
+            </div>
         </div>
-        <Link to='reviews' >Customer Reviews</Link>
         </main>
     );
 };

@@ -1,25 +1,18 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
+import './CustomerReview.css'
 
 const CustomerReview = (props) => {
     const {name, reviewText, rating } = props.review
     return (
-        <div>
-
-            <Carousel>
-            <Carousel.Item>
-                <Carousel.Caption>
-                <h3>{name}</h3>
-                    <p>{reviewText}</p>
-                    <p>Rating: {rating} </p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            </Carousel>
-
-           {/* <h1>{name}</h1>
-           <p>Review: {reviewText}</p>
-           <p>Rating:{rating}</p> */}
+            <div className=' review d-flex flex-column align-items-center w-25'>
+           <div className='review-body'>
+            <h4>{name}</h4>
+            <p>{reviewText}</p>
+            <p>Rating:{rating}</p>
+           </div>
         </div>
+        
     );
 };
 

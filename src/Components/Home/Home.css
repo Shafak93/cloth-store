@@ -1,0 +1,13 @@
+
+.btn-review{
+    text-decoration: none;
+    background-color: blue;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+}
+.btn-review:hover{
+    border: 1px solid blue;
+    background-color: white;
+    color: blue;
+}

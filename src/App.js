@@ -4,15 +4,15 @@ import About from './Components/About/About';
 import Blogs from './Components/Blogs/Blogs';
 import Dashboard from './Components/Dashboard/Dashboard';
 import Home from './Components/Home/Home';
-import Navbar from './Components/Navbar/Navbar';
 import Reviews from './Components/Reviews/Reviews';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NotFound from './Components/NotFound/NotFound';
+import Navigation from './Components/Navigation/Navigation';
 
 function App() {
   return (
-    <div className="App Container">
-      <Navbar></Navbar>
+    <div className="App">
+      <Navigation></Navigation>
       <Routes>
          <Route path='/' element={<Home></Home>}></Route>
          <Route path = '/reviews' element={<Reviews></Reviews>}></Route>

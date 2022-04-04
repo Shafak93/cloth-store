@@ -1,14 +1,8 @@
-/* .nav-items{
-    display: flex;
-    justify-content: center;
-   
-} */
 .item{
-    margin: 15px;
-    padding: 15px;
+    /* margin: .6rem; */
+    /* padding: .2rem; */
     text-decoration: none;
     color: rgb(109, 99, 99);
-    
     font-size: 20px;
     font-weight: bold;
 }
